@@ -77,7 +77,8 @@ RUBY_LIB_BASE = File.basename(RbConfig::CONFIG['libdir'])
 RUBY_PROGRAM_VERSION = RbConfig::CONFIG['RUBY_PROGRAM_VERSION']
 SHOES_RUBY_ARCH = RbConfig::CONFIG['arch']
 RUBY_1_9 = (RUBY_V =~ /^1\.9/)
-if RUBY_1_9
+RUBY_2_0 = (RUBY_V =~ /^2\.0/)
+if RUBY_1_9 or RUBY_2_0
   $: << "."
 end
 

@@ -291,7 +291,7 @@ typedef struct
   VALUE args;
 } shoes_exec;
 
-#ifdef RUBY_1_9
+#if defined(RUBY_1_9) || defined(RUBY_2_0)
 struct METHOD {
     VALUE oclass;		/* class that holds the method */
     VALUE rklass;		/* class of the receiver */

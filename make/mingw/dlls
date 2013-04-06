@@ -17,3 +17,6 @@ libeay32
 zlib1
 readline5
 libiconv2
+libfontconfig-1
+libexpat-1
+libpng14-14
